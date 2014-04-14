@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LocatorTheme.TextViewStyle.Inverse.Large"
+        android:background="@color/foreground_color"
+        android:paddingTop="@dimen/big_margin"
+        android:paddingBottom="@dimen/big_margin"
+        android:paddingLeft="@dimen/medium_margin"
+        android:paddingRight="@dimen/medium_margin"
+        android:gravity="center_vertical"
+        android:hint="@string/input_address"
+        android:layout_toLeftOf="@+id/send_button"
+    />
+    
+    <Button
+        android:id="@+id/send_button"
+        android:layout_alignTop="@+id/input"
+        android:layout_alignBottom="@+id/input"
+        android:layout_alignParentRight="true"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_button_bg"
+        android:text="@string/i_am_here"
+        />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_below="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+     />
+
+</RelativeLayout>

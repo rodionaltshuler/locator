@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/card_main_content_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <include layout="@layout/date_group_header"/>
+
+    <RelativeLayout
+        android:id="@+id/highlight_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/foreground_color"
+        >
+
+        <ImageView
+            android:id="@+id/context_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/context_menu_button_height"
+            android:background="@drawable/default_button_bg"
+            android:src="@drawable/ic_action_attach"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/LocatorTheme.TextViewStyle.Inverse.Small"
+            android:layout_toRightOf="@+id/context_menu_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/photo"
+            android:gravity="left"
+            android:text="Nov 29 12:20"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/LocatorTheme.TextViewStyle.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/time"
+            android:layout_alignRight="@+id/time"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="4dp"
+            android:text="completed"
+            />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/contact_photo_size"
+            android:layout_height="@dimen/contact_photo_size"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/rodion"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

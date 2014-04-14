@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_main_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <include layout="@layout/date_group_header"/>
+
+    <RelativeLayout
+        android:id="@+id/highlight_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/foreground_color"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:padding="2dp"
+        >
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/LocatorTheme.TextViewStyle.Inverse.Small"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@+id/context_menu_button"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="left"
+            android:text="Nov 29 12:20"
+            android:layout_toRightOf="@+id/photo"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_below="@+id/time"
+            style="@style/LocatorTheme.TextViewStyle.Secondary"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignLeft="@+id/time"
+            android:text="Rodion has requested your location. Really Rodion has requested your location"
+            android:layout_alignRight="@+id/time"
+            android:paddingRight="4dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/current_status_layout"
+            android:layout_below="@+id/status"
+            android:layout_alignLeft="@+id/time"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/small_double_margin"
+            android:layout_marginBottom="@dimen/small_double_margin"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <include layout="@layout/journal_item_expandable" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/context_menu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/context_menu_button_height"
+            android:background="@drawable/default_button_bg"
+            android:src="@drawable/ic_action_attach"
+            android:paddingRight="@dimen/medium_margin"
+            android:paddingLeft="@dimen/medium_margin"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">#ff669900</color>
+    <color name="holo_orange_light">#ffffbb33</color>
+    <color name="holo_orange_dark">#ffff8800</color>
+
+    <color name="forest_green_dark">#37b34a</color>
+    <color name="forest_green_light">#ff3fce55</color>
+
+    <color name="foreground_color">@android:color/white</color>
+    <color name="foreground_color_inverse">@color/forest_green_dark</color>
+    <color name="background_color">@color/forest_green_dark</color>
+    <color name="background_color_selected">@color/forest_green_light</color>
+    <color name="foreground_color_secondary">#ff3d3d3d</color>
+    <color name="disabled_background_color">@color/holo_orange_dark</color>
+    <color name="disabled_background_color_pressed">@color/holo_orange_light</color>
+
+    <color name="label_color">#ff4b4b4b</color>
+    <color name="order_completed">#ffb5fcb3</color>
+    <color name="order_in_process">#ffffedbd</color>
+    <color name="order_failed">#fff4a3ab</color>
+    <color name="order_not_exists">@android:color/white</color>
+    <color name="light_grey">#ffd0d0d0</color>
+    <color name="medium_grey">#ff8c8c8c</color>
+</resources>

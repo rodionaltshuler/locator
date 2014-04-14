@@ -1,0 +1,100 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+
+apply plugin: 'android'
+
+android {
+
+    compileSdkVersion 17
+    buildToolsVersion '19.0.3'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion androidMinSdkVersion
+        targetSdkVersion androidTargetSdkVersion
+    }
+
+    signingConfigs {
+
+        debug {
+            storeFile file("debug.keystore")
+        }
+        release {
+            storeFile file(locatorKeystoreFile)
+            storePassword locatorStorePassword
+            keyAlias locatorKeyAlias
+            keyPassword locatorKeyPassword
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            debuggable false
+            runProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg', 'gson.cfg', 'robolectric.cfg', 'eventbus.cfg'
+        }
+    }
+
+    sourceSets {
+
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            res.srcDirs = ['res']
+            java.srcDirs = ['src']
+        }
+
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile 'com.google.android.gms:play-services:4.0.30'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
+    compile 'org.roboguice:roboguice:2.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'de.greenrobot:eventbus:2.2.0'
+    compile fileTree(dir: 'libs', include: '*.jar')
+}

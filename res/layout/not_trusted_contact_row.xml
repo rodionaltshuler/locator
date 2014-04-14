@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_main_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/small_margin">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/contacts_header" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/highlight_area"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/inverse_button_bg"
+        >
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/contact_photo_size"
+            android:layout_height="@dimen/contact_photo_size"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/phone_number"
+            style="@style/LocatorTheme.TextViewStyle.Inverse.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/photo"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/photo"
+            android:text="+380504478616"
+            android:layout_toLeftOf="@+id/card_header_button_expand"
+            />
+
+        <ImageButton
+            android:id="@+id/card_header_button_expand"
+            android:background="@null"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_action_overflow"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_color"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

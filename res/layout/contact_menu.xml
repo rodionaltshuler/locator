@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_color"
+            />
+
+        <include layout="@layout/contacts_header" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="1dp"
+        android:src="@drawable/rodion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/request_button"
+        style="@style/LocatorTheme.TextViewStyle.Button"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:layout_toLeftOf="@+id/center_view"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/request_location" />
+
+        <View
+            android:id="@+id/center_view"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            />
+
+    <Button
+        android:id="@+id/share_button"
+        style="@style/LocatorTheme.TextViewStyle.Button"
+        android:layout_width="0px"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_margin="1dp"
+        android:layout_toRightOf="@+id/center_view"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/share_location" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

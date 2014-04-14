@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">People Locator</string>
+    <string name="remove_from_trusted">Remove from Trusted</string>
+    <string name="request_location">Request location</string>
+    <string name="share_location">Share my location</string>
+    <string name="add_contacts">Add to Trusted</string>
+    <string name="allowed_label">Trusted contacts</string>
+    <string name="journal_label">Journal</string>
+    <string name="demo">Demo</string>
+    <string name="share_and_request">Share my and Request his(her)</string>
+    <string name="add_contact_request">%1$s asking where are You. Add to Trusted contacts?</string>
+    <string name="location_shared">Share location</string>
+    <string name="location_shared_to_when">to %1$s at %2$s</string>
+    <string name="location_shared_from_when">by %1$s at %2$s</string>
+    <string name="income_request">Where are You?</string>
+
+    <string name="menu_item_show_on_map">Show on map</string>
+    <string name="menu_item_delete">Delete</string>
+    <string name="menu_item_add_to_trusted">Add to Trusted</string>
+    <string name="menu_item_reject_adding_to_trusted">Reject</string>
+    <string name="menu_item_share_location_to_non_trusted_once">Share once, don\'t add to Trusted</string>
+    <string name="menu_item_retry_send_sms">Retry</string>
+    <string name="menu_item_cancel">Cancel</string>
+    <string name="status_searching_for_location">Searching for location</string>
+    <string name="status_canceled">Canceled</string>
+    <string name="status_sent_successfully">Sent successfully</string>
+    <string name="status_not_sent_generic_failure">Failed to send SMS</string>
+    <string name="status_not_sent_radio_is_off">Failed to send - GSM network not available</string>
+    <string name="status_not_sent_empty_message">Failed to send SMS - empty message</string>
+    <string name="status_sms_delivered">SMS delivered</string>
+
+    <string name="you_shared_location_with">You share location with</string>
+    <string name="you_requested_location">You\'ve requested %1$s\'s location</string>
+    <string name="shared_location_with_you"> has shared location with You</string>
+    <string name="requested_your_location"> has requested your location</string>
+    <string name="requested_your_location_not_family"> (NOT TRUSTED) has requested your location</string>
+    <string name="status_sms_sent">Sms sent</string>
+    <string name="sms_no_service">Can\'t send SMS - no service</string>
+    <string name="no_requests">No requests</string>
+
+    <string name="all_requests">All requests</string>
+    <string name="at_prefix">at</string>
+    <string name="current_status">Current status:</string>
+
+    <string name="demo_not_trusted_request">Demo (not trusted request)</string>
+
+    <string name="family">Trusted</string>
+    <string name="not_trusted">Not trusted</string>
+    <string name="navigate_with_compass">Navigate with compass</string>
+    <string name="direction_label">Direction</string>
+    <string name="distance_label">Distance</string>
+
+    <string-array name="auto_answer_options">
+        <item>Auto-answer: ON</item>
+        <item>Auto-answer: OFF</item>
+        <item>What does it mean?</item>
+    </string-array>
+
+    <string name="auto_answer_help">Auto-answer ON: your device will answer to requests from trusted contacts, and notify You about requests from non-trusted. \n \nAuto-answer OFF: All the income location requests will be ignored.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="failed_to_find_location">Failed to find location</string>
+    <string name="location_found">Location found</string>
+    <string name="ignored_request">Ignored location request</string>
+    <string name="from">from</string>
+    <string name="has_no_phone_numbers">has no phone numbers</string>
+    <string name="new_contact_name">Unkwnown contact</string>
+    <string name="share_app">Share</string>
+    <string name="rate_app">Rate app</string>
+    <string name="share_subject">Please install this Android app</string>
+    <string name="share_text">Hi! Please, install \'People Locator\' Android app. With this app, You could see my location on map when You need it, in one click.  Even when we don\'t have internet connection! Link to install: %1$s</string>
+    <string name="cant_find_location_open_settings">Can\'t find location. Open location settings?</string>
+    <string name="searching_for_location">Searching for location...</string>
+    <string name="navigate_with_ozi">Navigate with Ozi Explorer</string>
+    <string name="navigate_with_yandex">Navigate with Yandex</string>
+    <string name="navigate_with_google">Navigate with Google Maps</string>
+    <string name="google_maps_app_name">Google Maps</string>
+    <string name="yandex_maps_app_name">Yandex Maps</string>
+    <string name="androzic_app_name">Androzic Navigator</string>
+
+    <string name="request_install_dialog_title">App is not installed</string>
+    <string name="request_install_dialog_positive">Yes</string>
+    <string name="request_install_dialog_negative">Later</string>
+    <string name="request_install_dialog_message">App %1$s is not installed on your device. Go to Google Play for it?</string>
+    <string name="cant_find_location">Can\'t find location. Could You point it manually?</string>
+    <string name="input_address">Input address</string>
+    <string name="where_are_you">Where are You?</string>
+    <string name="i_am_here">I\'m here</string>
+    <string name="intro">1. Ask to install this app your friends and family. Use \'Share\' button to do this. \n\n 2. Press \'OK\'. The use \'Add to Trusted\' button to fill a list of contacts You wanna share locations with.  \n\n 3. That\'s all! Now make requests and receive location shares.</string>
+    <string name="get_started">Get started</string>
+    <string name="average_speed_for_time">Average speed for %1$s sec</string>
+    <string name="kmph">%1$s kmph</string>
+
+</resources>

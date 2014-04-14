@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="large_text_size">18dp</dimen>
+    <dimen name="larger_text_size">24dp</dimen>
+    <dimen name="extra_large_text_size">64dp</dimen>
+    <dimen name="context_menu_item_height">60dp</dimen>
+
+    <dimen name="compass_arrow_width">240dp</dimen>
+    <dimen name="compass_arrow_height">240dp</dimen>
+
+</resources>

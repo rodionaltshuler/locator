@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/request_location" android:id="@+id/request_location"/>
+    <item android:title="@string/share_location" android:id="@+id/share_location"/>
+    <item android:title="@string/remove_from_trusted" android:id="@+id/remove"/>
+    <item android:title="@string/demo" android:id="@+id/demo"/>
+    <item android:title="@string/demo_not_trusted_request" android:id="@+id/demo_not_trusted_request" />
+</menu>

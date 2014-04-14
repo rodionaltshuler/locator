@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="@dimen/small_margin"
+ >
+
+    <RelativeLayout
+        android:id="@+id/pick_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_button_bg">
+
+        <TextView
+            android:id="@+id/button"
+            style="@style/LocatorTheme.TextViewStyle.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/contact_photo_size"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:text="@string/add_contacts"
+    />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/medium_margin"
+            android:layout_toRightOf="@+id/button"
+            android:src="@drawable/ic_add" />
+
+    </RelativeLayout>
+</LinearLayout>

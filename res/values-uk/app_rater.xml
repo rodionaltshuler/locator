@@ -1,0 +1,7 @@
+<resources>
+    <string name="dialog_title">Оцінити %s</string>
+    <string name="rate_message">Якщо Вам сподобався цей додаток, оцініть його, будь ласка. Дакуємо за підтримку!</string>
+    <string name="rate">Оцінити зараз</string>
+    <string name="later">Нагадати пізніше</string>
+    <string name="no_thanks">Ні, дякую</string>
+</resources>

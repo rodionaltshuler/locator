@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:id="@+id/card_main_content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="32dp"
+    android:padding="@dimen/small_margin"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/LocatorTheme.TextViewStyle.Inverse.Small.AllCaps"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="@string/not_trusted"
+        android:layout_gravity="center"
+        android:gravity="center"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/background_color"
+    />
+
+</LinearLayout>

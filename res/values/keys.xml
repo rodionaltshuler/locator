@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--debug-->
+    <!--<string name="maps_v2_api_key">AIzaSyDaGyDixg9Q6eMTnO-6Uda3oyi8-o-SfBk</string>-->
+
+    <!--release-->
+    <!--<string name="maps_v2_api_key">AIzaSyARng-uKTDpyVhep2OkY2bqjKn5wx3eN44</string>-->
+    <string name="maps_v2_api_key">YOUR_MAP_KEY</string>
+</resources>

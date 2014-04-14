@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/medium_margin"
+    android:background="@color/disabled_background_color">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        style="@style/LocatorTheme.TextViewStyle.Larger.AllCaps"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/big_margin"
+        android:paddingBottom="@dimen/big_margin"
+        android:text="Title"
+        android:gravity="center"
+    />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/LocatorTheme.TextViewStyle.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a text"
+        android:padding="12dp"
+        android:gravity="center"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/positive"
+            style="@style/LocatorTheme.Button.Disabled"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_ok"
+            android:layout_marginTop="@dimen/medium_margin"
+            />
+
+        <Button
+            android:id="@+id/negative"
+            style="@style/LocatorTheme.Button.Disabled"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/dialog_cancel"
+            android:layout_marginTop="@dimen/medium_margin"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

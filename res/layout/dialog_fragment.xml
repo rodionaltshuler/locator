@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/medium_margin"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        style="@style/LocatorTheme.TextViewStyle.Larger.AllCaps"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/big_margin"
+        android:paddingBottom="@dimen/big_margin"
+        android:text="Title"
+    />
+
+    <TextView
+        android:id="@+id/message"
+        style="@style/LocatorTheme.TextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a text"
+    />
+
+    <Button
+        android:id="@+id/button_close"
+        style="@style/LocatorTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_ok"
+        android:layout_marginTop="@dimen/medium_margin"
+        />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">People Locator</string>
+    <string name="remove_from_trusted">Удалить из Доверенных</string>
+    <string name="request_location">Ты где?</string>
+    <string name="share_location">Сказать где я</string>
+    <string name="add_contacts">Добавить в Доверенные</string>
+    <string name="allowed_label">Доверенные</string>
+    <string name="journal_label">Журнал</string>
+    <string name="demo">Демо</string>
+    <string name="share_and_request">Сказать где я и спросить где он(она)</string>
+    <string name="add_contact_request">%1$s интересуется где Вы. Добавить в Доверенные?</string>
+    <string name="location_shared">Сообщаю местонахождение: </string>
+    <string name="location_shared_to_when"> %1$s в %2$s</string>
+    <string name="location_shared_from_when"> %1$s в %2$s</string>
+    <string name="income_request">Ты где?</string>
+
+    <string name="menu_item_show_on_map">Показать на карте</string>
+    <string name="menu_item_delete">Удалить</string>
+    <string name="menu_item_add_to_trusted">Добавить в Доверенные</string>
+    <string name="menu_item_reject_adding_to_trusted">Отклонить</string>
+    <string name="menu_item_share_location_to_non_trusted_once">Сказать где я 1 раз, не добавлять в Доверенные</string>
+    <string name="menu_item_retry_send_sms">Попробовать еще раз</string>
+    <string name="menu_item_cancel">Отменить</string>
+    <string name="status_searching_for_location">Определется Ваше местоположение</string>
+    <string name="status_canceled">Отменено</string>
+    <string name="status_sent_successfully">Сообщение успешно отправлено</string>
+    <string name="status_not_sent_generic_failure">Сообщение не отправлено</string>
+    <string name="status_not_sent_radio_is_off">Сообщение не отправлено - сеть не доступна</string>
+    <string name="status_not_sent_empty_message">Сообщение не отправлено ибо пусто</string>
+    <string name="status_sms_delivered">Сообщение доставлено!</string>
+    <string name="status_sms_sent">Сообщение отправлено</string>
+    <string name="sms_no_service">СМС не отправлено - услуга недоступна</string>
+
+
+    <string name="you_shared_location_with">Вы говорите где Вы: </string>
+
+    <string name="you_requested_location">Вы запросили местоположение: %1$s</string>
+    <string name="shared_location_with_you">сообщил(а) Вам свое местоположение</string>
+    <string name="requested_your_location">интересуется где Вы</string>
+    <string name="requested_your_location_not_family">(НЕ ДОВЕРЕННЫЙ КОНТАКТ) интересуется где Вы</string>
+
+    <string name="no_requests">Нет запросов</string>
+
+    <string name="all_requests">Все запросы</string>
+    <string name="at_prefix">в</string>
+    <string name="current_status">Статус:</string>
+
+    <string name="demo_not_trusted_request">Демо (not trusted request)</string>
+
+    <string name="family">Доверенные контакты</string>
+    <string name="not_trusted">Не Доверенные</string>
+    <string name="navigate_with_compass">Навигация по компасу</string>
+    <string name="direction_label">Азимут</string>
+    <string name="distance_label">Расстояние</string>
+
+    <string-array name="auto_answer_options">
+        <item>Авто-ответ: ВКЛ.</item>
+        <item>Aвто-ответ: ВЫКЛ.</item>
+        <item>Что такое Авто-Ответ?</item>
+    </string-array>
+
+    <string name="auto_answer_help">Авто-ответ ВКЛ: Ваш телефон будет автоматически сообщать свое местопложение в ответ на запросы Доверенных контактов, и уведомлять при запросах от Не Доверенных. \n \nАвто-ответ ВЫКЛ: Все запросы будут проигнорированы, будет показано только уведомление о них.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Отмена</string>
+
+    <string name="failed_to_find_location">Не получилось найти местоположение</string>
+    <string name="location_found">Местоположение найдено</string>
+    <string name="ignored_request">Запрос Вашего местоположения проигнорирован</string>
+    <string name="from">от</string>
+    <string name="has_no_phone_numbers">: не указаны номера телефона</string>
+    <string name="new_contact_name">Неизвестный</string>
+    <string name="share_app">Поделиться</string>
+    <string name="rate_app">Оценить приложение</string>
+    <string name="share_subject">Пожалуйста, установи это Андроид-приложение</string>
+    <string name="share_text">Привет! Пожалуйста, установи Андроид-приложение \'People Locator\'. Сможешь узнавать где я одним кликом, даже без интернет-подключения. Загрузить отсюда: %1$s</string>
+
+    <string name="cant_find_location_open_settings">Не могу найти текущее местоположение. Открыть настройки?</string>
+    <string name="searching_for_location">Ищу текущие координаты...</string>
+
+    <string name="navigate_with_ozi">Навигация в Ozi Explorer</string>
+    <string name="navigate_with_yandex">Навигация в Yandex Картах </string>
+    <string name="navigate_with_google">Навигация в Google Maps</string>
+    <string name="google_maps_app_name">Google Maps</string>
+    <string name="yandex_maps_app_name">Yandex Карты</string>
+    <string name="androzic_app_name">Androzic Navigator</string>
+
+    <string name="request_install_dialog_title">Приложение не установлено</string>
+    <string name="request_install_dialog_positive">Да</string>
+    <string name="request_install_dialog_negative">Позже</string>
+    <string name="request_install_dialog_message">Приложение %1$s не установлено на этом устройстве. Идём на Google Play за ним?</string>
+    <string name="cant_find_location">Не могу найти местоположение. Можешь показать где мы?</string>
+    <string name="input_address">Адрес или координаты</string>
+    <string name="where_are_you">Ты где?</string>
+    <string name="i_am_here">Я здесь</string>
+    <string name="intro">1. Попроси установить это приложение семью и друзей. Воспользуйся кнопкой \'Поделиться\' в верхнем меню. \n\n 2.Нажми \'OK\'. После, используя кнопку \'Добавить в доверенные\' заполни список контактов людьми, с которыми хочешь делиться местоположением или узнавать где они. \n\n 3. Это всё! Теперь делай запросы и узнавай кто где.</string>
+    <string name="get_started">С чего начать?</string>
+
+    <string name="average_speed_for_time">Средняя скорость за %1$s сек</string>
+    <string name="kmph">%1$s км/ч</string>
+
+</resources>

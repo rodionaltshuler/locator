@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--https://blog.stylingandroid.com/archives/1285-->
+    <style name="LocatorTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/LocatorTheme.ActionBar</item>
+        <item name="android:actionBarStyle">@style/LocatorTheme.ActionBar</item>
+        <item name="android:buttonStyle">@style/LocatorTheme.Button</item>
+        <item name="android:textViewStyle">@style/LocatorTheme.TextViewStyle</item>
+        <item name="android:imageButtonStyle">@style/LocatorTheme.ImageButton</item>
+        <!--need to get non-default background on start-->
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:spinnerDropDownItemStyle">@style/LocatorTheme.DropDownNavigation</item>
+        <item name="android:dropDownListViewStyle">@style/LocatorTheme.ListView</item>
+        <item name="actionBarDivider">@color/foreground_color</item>
+
+        <item name="android:listPopupWindowStyle">@style/LocatorTheme.DropDownNavigation</item>
+        <item name="listPopupWindowStyle">@style/LocatorTheme.DropDownNavigation</item>
+
+        <item name="android:spinnerStyle">@style/LocatorTheme.ShareDropdown</item>
+
+        <item name="android:actionDropDownStyle">@style/LocatorTheme.Spinner.DropDownItem</item>
+        <item name="actionDropDownStyle">@style/LocatorTheme.Spinner.DropDownItem</item>
+
+        <item name="popupMenuStyle">@style/LocatorTheme.Spinner.DropDownItem</item>
+        <item name="android:popupMenuStyle">@style/LocatorTheme.Spinner.DropDownItem</item>
+        <!--<item name="android:alertDialogTheme">@style/LocatorApplication.AlertDialog</item>-->
+
+    </style>
+
+    <style name="LocatorApplication.AlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:textColor">@color/foreground_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/enabled_bg</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/LocatorTheme.WindowTitle</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:itemTextAppearance">@style/LocatorTheme.TextViewStyle.Large</item>
+    </style>
+
+    <style name="LocatorTheme.WindowTitle">
+        <item name="android:textColor">@color/foreground_color</item>
+        <item name="android:background">@color/background_color</item>
+    </style>
+
+
+    <style name="LocatorTheme.Spinner.DropDownItem" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:popupBackground">@drawable/default_button_bg</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+    </style>
+
+    <!--<style name="Widget.Sherlock.DropDownItem.Spinner" parent="@style/LocatorTheme.ShareDropdown"></style>-->
+    <style name="Widget.Sherlock.ListPopupWindow" parent="@style/LocatorTheme.ShareDropdown"></style>
+
+    <style name="LocatorTheme.ShareDropdown" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:popupBackground">@drawable/default_button_bg</item>
+        <item name="android:divider">@color/foreground_color</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="LocatorTheme.DropDownNavigation" parent="android:Widget.DropDownItem">
+        <item name="android:divider">@color/foreground_color</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/LocatorTheme.TextViewStyle.ActionBarDropDown</item>
+    </style>
+
+    <style name="LocatorTheme.ListView" parent="android:Widget">
+        <!-- <item name="android:background">@drawable/default_button_bg</item>-->
+        <item name="android:divider">@color/foreground_color</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.ActionBarDropDown" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="LocatorTheme.ActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/background_color</item>
+        <item name="background">@color/background_color</item>
+        <item name="titleTextStyle">@style/LocatorTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="LocatorTheme.ActionBar.TitleTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LocatorTheme.Button" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/default_button_bg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="LocatorTheme.Button.Disabled" parent="LocatorTheme.Button">
+        <item name="android:background">@drawable/disabled_bg</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Inverse" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textColor">@color/background_color</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Secondary" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textColor">@color/foreground_color_secondary</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Secondary.Title" parent="LocatorTheme.TextViewStyle.Secondary">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Secondary.Title.AllCaps" parent="LocatorTheme.TextViewStyle.Secondary.Title">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="LocatorTheme.TextViewStyle.Inverse.Large" parent="LocatorTheme.TextViewStyle.Inverse">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Large.AllCaps" parent="LocatorTheme.TextViewStyle.Large">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+    <style name="LocatorTheme.TextViewStyle.Inverse.Small" parent="LocatorTheme.TextViewStyle.Inverse">
+        <item name="android:textColor">@color/background_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Inverse.Small.AllCaps" parent="LocatorTheme.TextViewStyle.Inverse.Small">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Large" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Larger" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textSize">@dimen/larger_text_size</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Larger.Inverse" parent="LocatorTheme.TextViewStyle.Larger">
+        <item name="android:textColor">@color/background_color</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Larger.AllCaps" parent="LocatorTheme.TextViewStyle.Larger">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.ExtraLarge" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textSize">@dimen/extra_large_text_size</item>
+    </style>
+
+
+    <style name="LocatorTheme.ImageButton" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/default_button_bg</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Button" parent="LocatorTheme.TextViewStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="LocatorTheme.TextViewStyle.Inverse.Small.Inverse" parent="LocatorTheme.TextViewStyle.Inverse">
+        <item name="android:textSize">12dp</item>
+    </style>
+
+</resources>
+

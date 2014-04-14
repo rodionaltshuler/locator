@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_distance_and_azimuth">
+
+        <include
+            layout="@layout/contact_distance_and_azimuth"
+         />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/compassView"
+        android:layout_width="@dimen/compass_arrow_width"
+        android:layout_height="@dimen/compass_arrow_height"
+        android:src="@drawable/arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/compassView"
+        android:layout_alignTop="@+id/compassView"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:indeterminate="true"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:progressDrawable="@drawable/loading_indicator_drawable"
+        android:indeterminateDrawable="@drawable/loading_indicator_drawable"
+        android:indeterminateBehavior="repeat"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+     />
+
+        <TextView
+            style="@style/LocatorTheme.TextViewStyle.Larger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/searching_for_location"
+            android:padding="12dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <RelativeLayout
+            android:id="@+id/settings_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="invisible"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:background="@drawable/disabled_inverse_bg"
+            >
+
+            <TextView
+                style="@style/LocatorTheme.TextViewStyle.Large"
+                android:id="@+id/open_settings_label"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/cant_find_location_open_settings"
+                android:layout_marginRight="16dp"
+                android:gravity="right|center_vertical"
+                android:layout_toLeftOf="@+id/open_settings_button"
+                android:layout_alignBottom="@+id/open_settings_button"
+                android:layout_alignTop="@+id/open_settings_button"
+                />
+
+            <ImageView
+                android:id="@+id/open_settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_settings"
+                android:layout_alignParentRight="true"
+                android:padding="8dp"
+                />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:text="device heading: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/toTarget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to target:"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

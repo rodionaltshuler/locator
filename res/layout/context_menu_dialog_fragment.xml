@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/small_double_margin"
+        >
+
+        <ImageView
+            android:src="@drawable/rodion"
+            android:id="@+id/contact_photo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            />
+
+        <TextView
+            android:id="@+id/contact_name"
+            style="@style/LocatorTheme.TextViewStyle.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Аня"
+            android:layout_marginLeft="@dimen/medium_margin"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0px"
+     />
+
+</LinearLayout>

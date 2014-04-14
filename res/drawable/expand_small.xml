@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_action_expand">
+        <scale android:scaleHeight="0.3" android:scaleWidth="0.3"/>
+    </item>
+
+</selector>
